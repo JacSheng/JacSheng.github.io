@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Form-Test Input</title></head>
+    <body topmargin="50">
+        
+        <center>
+            <table border=0 body bgcolor="azure"><form>
+                <p style="font-family:verdana;font-size:160%;text-align:center;width:60%;height:40%;">
+                    <tr>
+                        <td>Personal details:</td>
+                        <td>First Name:<input type="text name=fname" maxlength=5>
+                         Last Name:<input type="text name=lname"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type=radio name=gender value=Male>Male
+                        <input type=radio name=gender value=Female>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Choose your favourtie subjects:<br></td>
+                        <td><input type="checkbox" name=fav_sub value=DCS4103>DCS4103<br>
+                        <input type=checkbox name=fav_sub value=DCS3003>DCS3003<br>
+                        <input type=checkbox name=fav_sub value=MST1003>MST1003<br>
+                        <input type=checkbox name=fav_sub value=MST2003>MST2003<br></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea rows=4 cols=70 name=address></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth:</td>
+                        <td><input type=date name=dob><br></td>
+                    </tr>
+                    <tr>
+                        <td>Login password:</td>
+                        <td><input type=password name=loginpass></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left"><input type=submit value=Submit>
+                        <input type=reset value=Reset></td>
+                    </tr>
+            </form>  
+        </center>     
+    </body>
+</html>
