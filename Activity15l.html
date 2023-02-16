@@ -1,0 +1,75 @@
+<html><head><title>Form-Text Input</title>
+<link rel="stylesheet" type="text/css"
+href="activity15.css">
+    
+</head>
+    <body topmargin=50>
+    <center>
+    <form>
+    <table>
+    <caption>Personal details:</caption>
+    <tr>
+    <td width='40%' class="title">First Name:
+    </td>
+    <td><input type=text name=fname></td>
+    </tr>
+    <tr>
+    <td class="title">Last Name:</td>
+    <td><input type=text name=lname></td>
+    </tr>
+    <tr>
+    <td class="title">Gender:</td>
+    <td><input type=radio name=gender value=Male>Male
+        <input type=radio name=gender value=Female>Female
+    </td>
+    </tr>
+    <tr>
+    <td class="title">
+        Choose your favorite subjects:
+    </td>
+    <td>
+        <input type=checkbox name=fav_sub value=DCS3003>DCS3003
+        <input type=checkbox name=fav_sub value=MST1003>MST1003
+        <input type=checkbox name=fav_sub value=MST2003>MST2003
+    </td>
+    </tr>
+    <tr><td class="title">Date of birth:</td>
+    <td><input type=date name=dob></td>
+    </tr>
+    <tr>
+    <td class="title">Login password:</td>
+    <td><input type="password" name=loginpass>
+    </td>
+    </tr>
+    
+    <tr>
+    <td class="title">
+    Course:
+    </td>
+    <td>
+    <select>
+    <option value="0">- List of Courses -</option>
+
+<optgroup label="Diploma In Computer Science">
+<option value="DCS_S1" >Semester 1</option>
+<option value="DCS_S2" >Semester 2</option>
+<option value="DCS_S3" >Semester 3</option>
+<option value="DCS_S4" >Semester 4</option>
+<option value="DCS_S5" >Semester 5</option>
+<option value="DCS_S6" >Semester 6</option>
+</optgroup>
+
+<option value="DIB">Diploma In Bussiness</option>
+<option value="DAS">Diploma In Airline Services</option>
+</select>
+</td>
+</tr>
+    
+</table>
+<br><br>
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</td></tr><br><br>
+</form></center>
+</body></html>
+    
