@@ -48,6 +48,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	white-space: nowrap;
+	scroll-behavior: smooth;
 }
 
 .carousel img{
