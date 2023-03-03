@@ -1,21 +1,24 @@
 table{
-    font-family : Times New Roman ;
-    background-color : powderblue;
-    font-size : 16pt;
+    font-family:'Times New Roman', Times, serif;
+    font-size:16pt;
 }
-caption {
-    text-align:center ;
-    font-weight : bold;
-    font-size : 20pt;
-    height:50px;
+
+caption{
+    text-align:center;
+    font-weight: bold;
+    font-size: 50px;
 }
-th,td {
+
+th,td{
     padding : 15px;
-    height : 20%;
+    height:20%;
+    font-size: 16pt;
+    background-color:powderblue;
 }
-td.title {
+
+td.title{
     font-weight:bold;
-    font-size: large; 
+    font-size:large;
     background-color: #687886;
-    color : #fff;
+    color: #fff;
 }

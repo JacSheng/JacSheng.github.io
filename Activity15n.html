@@ -1,0 +1,138 @@
+<html><head><title>Form-Text Input</title>
+<link rel="stylesheet"  
+href="activity15.css">
+<script>
+    function validateForm() {
+        let x = document.MyFirstForm.username.value;
+        if (x == ""){
+        alert("Please  provide your Name!");
+        return false;
+    }
+
+    var letters = /^[A-Za-z]+$/;
+    if (!x.match (letters))
+    {
+        alert("Please input alphabet characters. ");
+        return false;
+    }
+    if ((MyFirstForm.gender[0].checked == false) && (MyFirstForm.gender[1].checked == false))
+    {
+        alert ( "Please choose Gender : Male or Female");
+        return false;
+    }
+    var group = document.MyFirstForm.fav_sub;
+    for (var i=0; i<group.length; i++)
+    {
+    if (group[i].checked)
+    break;
+    }
+    if (i==group.length)
+    {
+    alert("No Checkbox is checked");
+    return false;
+    }
+
+    var date1 = new Date();
+    var dob = document.MyFirstForm.dob.value;
+    var date2 = new Date(dob);
+    var y1 = date1.getFullYear(); //getting current year 
+    var y2 = date2.getFullYear(); //getting dob year
+    var age = y1-y2;              //calculating age
+    alert("Age :" + age);
+    return true ;
+
+    }
+    // to get a new dropdown list from another dropdown list
+var programObject =  
+    {
+    "Diploma In Computer Science": ["Semester 1", "Semester 2", "Semester 3", "Semester 4", "Semester 5", "Semester 6"],
+    "Diploma In Bussiness": ["Semester 1", "Semester 2", "Semester 3", "Semester 4"],
+    "Diploma In Airline Services": ["Semester 1", "Semester 2", "Semester 3"]
+    }
+
+  function changeProgram(el)   
+    {
+    document.getElementById("semester-list").options.length = 0;
+    var courseListArray = programObject[el.options[el.selectedIndex].text];
+    for (var item = 0; item < courseListArray.length; item++)    
+     {
+      document.getElementById("semester-list").options[document.getElementById("semester-list").options.length] = new Option(courseListArray[item], courseListArray[item]);
+    }
+    }
+
+</script>
+
+</head>
+<body topmargin=50>
+<center>
+<form name=MyFirstForm  onsubmit="return validateForm()">
+<br>
+<table>
+<caption>Personal details:</caption>
+<tr>
+<td width='40%' class="title">Name:
+</td>
+<td><input type=text  name=username></td>
+</tr>
+<tr>
+<td class="title">Gender:</td>
+<td><input type=radio name=gender value=Male>Male
+    <input type=radio name=gender value=Female>Female
+    
+</td>
+</tr>
+<tr>
+<td class="title">
+    Choose your favorite subjects:
+</td>
+<td>
+    <input type=checkbox name=fav_sub value=DCS3003>DCS3003
+    <input type=checkbox name=fav_sub value=MST1003>MST1003
+    <input type=checkbox name=fav_sub value=MST2003>MST2003
+</td>
+</tr>
+<tr><td class="title">Date of birth:</td>
+<td><input type=date name=dob></td>
+</tr>
+<tr>
+    <td class="title">
+        Email address:
+    </td>
+    <td>
+        <input type=email name=useremail>
+    </td>
+</tr>
+<tr>
+<td class="title">Login password:</td>
+<td><input type="password" name=loginpass maxlength="10"> 
+</td>
+</tr>
+
+<tr>
+<td class="title">
+Course:
+</td>
+<td>
+
+    <select name=course id=program-list onchange="changeProgram(this)">
+        <option value=none disabled selected>- List of Courses -</option>
+        <option value="DCS">Diploma In Computer Science</option>
+        <option value="DIB">Diploma In Bussiness</option>
+        <option value="DAS">Diploma In Airline Services</option>
+        </select>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <select name=semester id=semester-list>
+        <option value=none disabled selected>Please select a course</option>
+        </select>
+</td>
+</tr>
+
+</table>
+<br><br>
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</td></tr><br><br>
+</form></center>
+</body></html>
