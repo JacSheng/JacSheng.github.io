@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project1.css">
+  <link rel="stylesheet" href="programmes.css">
+  <link rel="stylesheet" href="programmes-file.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/travel.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="Project1.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="programmes.html">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+    </ul>
+<br>
+  </div>
+  <hr size="4" color="red">
+<br>
+<div class="ptitle">
+<img src="Picture WD/ind.png"  width="90%" height="100%">
+</div>  
+<br>
+<div class="ptext">
+<p class="ptext1">Course Overview</p>
+<p class="ptext2">Wish to pursue professional careers in visual communications industry?</p>
+<p class="ptext2">The Graphic Design course is a platform to train potential graphic designers
+     who are able to provide design and visual solutions that meet the clients demands.</p>
+<br>
+<p class="ptext2">Students will have the opportunity to learn manual skills and exploration of conventional as well as contemporary media in communication designs. This course covers areas such as advertising and marketing, corporate identity, publication design, packaging design, typography, illustration, computer graphics and photography into communication design.
+     Our Graphic Design students will also learn the skills of advanced computer software and digital design. 
+     Aside from soft skills, students will learn critical thinking, creative and innovative conceptual designs that will prepare them for their future in the creative industry.</p>
+<br><br>
+<p class="ptext1">Showcase Gallery</p>
+
+<div class="gallery">
+    <div class="gallery-main">
+        <img src="Picture WD/ind0.jpeg" id="main">
+    </div>
+
+    <div class="gallery-small">
+        <img src="Picture WD/ind0.jpeg" onclick="changeimage(this.src)">
+        <img src="Picture WD/ind2.png"onclick="changeimage(this.src)">
+        <img src="Picture WD/ind3.jpg"onclick="changeimage(this.src)">
+    </div>
+</div>
+
+<script>
+    const changeimage = (src) =>{
+        document.getElementById("main").src = src
+    }
+</script>
+
+<br><br><br>

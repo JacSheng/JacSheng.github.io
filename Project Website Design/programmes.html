@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project1.css">
+  <link rel="stylesheet" href="programmes.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/travel.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="Project1.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="Programmes">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+    </ul>
+<br>
+  </div>
+  <hr class="dp1" size="250" color="brown">
+<p class="dp">Programmes</p>
+<br>
+<div class="dp2">
+    <p class="dp3">Diploma</p>
+    <hr size="3" color="red">
+
+  <img src="Picture WD/fine art5.jpeg"  class="img preview"><p class="title">Fine Art</p><a class="link" href="fine art.html">[read more]</a>
+  <br>
+  <img src="Picture WD/gd1.jpeg"  class="img preview"><p class="title">Graphic Design</p><a class="link" href="gp.html">[read more]</a>
+  <br>
+  <img src="Picture WD/id7.jpg"  class="img preview"><p class="title">Illustration</p><a class="link" href="id.html">[read more]</a>
+
+  <div class="space1">
+    <img src="Picture WD/ind1.jpg" class="img preview"><p class="title">Interior Design</p><a class="link1" href="ind.html">[read more]</a>
+    <br>
+    <img src="Picture WD/ill3.jpg" class="img preview"><p class="title">Industrial Design</p><a class="link1" href="ill.html">[read more]</a>
+    <br>
+    <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Textile & Fashion Design</p><a class="link1" href="Project1.html">[read more]</a>
+    </div>
+<br><br>
+  <script>
+    for (let img of document.querySelectorAll(".preview")) {
+      img.addEventListener("click", () => {
+    
+          let container = document.createElement("div")
+          container.classList.add("preview-container")
+          container.onclick = function () {
+              container.remove()
+          }
+          
+          let innerImg = document.createElement("img")
+          innerImg.classList.add("image")
+    
+          innerImg.src = img.src
+    
+          container.onwheel = function (event) {
+              event.preventDefault()
+            }
+    container.append(innerImg)
+    
+    document.body.append(container)
+    })
+    }
+    </script>

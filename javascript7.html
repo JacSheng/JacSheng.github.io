@@ -1,0 +1,23 @@
+<html><head><title>JavaScript</title>
+    <link rel="icon" href="sunflower.jpg" type="image/jpg">
+    </head>
+    <body>
+    <h1> This is an example of using JavaScript - Event onblur attribute in HTML. </h1>
+    <font size=5 color=red><b>
+    ( A Function is triggered -> 
+    the input text will change to UPPER CASE when the cursor leave the input field)
+    </b></font><br><br>
+    
+    <h2>Example 1: </h2>
+    Enter your name: 
+    <input type=text id=fname onblur=CallFunction()>
+    <script>
+      function CallFunction() 
+      {
+        var getfname = document.getElementById("fname");
+        alert("The input text *** " + getfname.value + " *** will change to UPPER CASE");
+        getfname.value = getfname.value.toUpperCase();
+      }
+    </script>
+    <br><br><hr><br>
+    </body></html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project1.css">
+  <link rel="stylesheet" href="programmes.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/travel.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="Project1.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="programmes.html">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+    </ul>
+<br>
+  </div>
+<hr size="4" color="red">
+
+<img src="Picture WD/travel.jpg" width="100%" height="550px" >
+<div class="text-home">
+  <p>Welcome to Malaysian Institute of Art</p>
+</div>
+
+<div class="text1-home">
+  <p>MIA is a community of lively young artists in the making. At MIA, 
+  students will find themselves experiencing and exploring new creative forms,
+   expressions of various kind of arts and skills that will contribute to their future careers.
+    To enhance the live and learn experience, we provide an ideal hands-on learning environment, 
+    classrooms and facilities for our students as well as living facilities close to campus. 
+    With the growing numbers of amenities around the campus such as a shopping mall and an upcoming convention center, 
+    MIA is located in an area where students can truly live and learn to the fullest.
+  </p></div>
+
+<div class="text-home1">
+  Area of Study
+</div>
+<hr size="3" color="red">
+  <div class="space2">
+  <img src="Picture WD/travel.jpg"  class="img preview"><p class="title">Fine Art</p><a class="link" href="Project1.html">[read more]</a>
+  <br>
+  <img src="Picture WD/travel.jpg"  class="img preview"><p class="title">Graphic Design</p><a class="link" href="Project1.html">[read more]</a>
+  <br>
+  </div>
+
+  <div class="space3">
+    <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Interior Design</p><a class="link1" href="Project1.html">[read more]</a>
+    <br>
+    <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Industrial Design</p><a class="link1" href="Project1.html">[read more]</a>
+    <br>
+  </div>
+    
+    <div class="space4">
+      <img src="Picture WD/travel.jpg"  class="img preview"><p class="title">Illustration</p><a class="link" href="Project1.html">[read more]</a>
+      <br>
+      <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Textile & Fashion Design</p><a class="link1" href="Project1.html">[read more]</a>
+    </div>
+
+    <script>
+      for (let img of document.querySelectorAll(".preview")) {
+        img.addEventListener("click", () => {
+      
+            let container = document.createElement("div")
+            container.classList.add("preview-container")
+            container.onclick = function () {
+                container.remove()
+            }
+            
+            let innerImg = document.createElement("img")
+            innerImg.classList.add("image")
+      
+            innerImg.src = img.src
+      
+            container.onwheel = function (event) {
+                event.preventDefault()
+              }
+      container.append(innerImg)
+      
+      document.body.append(container)
+      })
+      }
+      </script>
+<br><br><br><br>
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project1.css">
+  <link rel="stylesheet" href="preview.css" >
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/travel.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="Project1.html">Home</a>
+        <li class="header-items"><a href="About us.html">About us</a>
+        <li class="header-items"><a href="programmes.html">Programmes</a>
+        <li class="header-items"><a href="Contact us.html">Contact</a>
+    </ul>
+<br>
+  </div>
+<hr class="ds1" size="250" color="brown">
+<p class="ds">Know us better</p>
+<br>
+<div class="ds0">
+<p class="ds2">Our Story</p>
+<hr size="2" color="red">
+<p class="ds3">MIA has trained and produced thousands of creative professionals who have contributed their creative skills to various industries in this country. In decades of successive generations, 
+  this institution has expanded, offering a range of Diploma courses in the field of art, design and music with comprehensive and well designed course contents.
+ 
+<p class="ds3">The emphasis is placed on the mastery of creative skills, in-depth inquires, conceptual development, critical thinking and digital knowledge. 
+MIA makes every effort to nurture talents, encourages creative expressions from our students while integrating multi-ethnic cultural values into our programs to enhance our students learning experience.
+   
+<p class="ds3">We endeavor to provide affordable and quality education in the creative arts byl providing a conducive environment for our students to develop their creative potentials and strive for artistic excellence. 
+MIA is committed to cater for the needs of human resources by providing innovative, confident, independent and creative professionals who will contribute towards the advancement of this country’s creative industry.</p>
+</p></p></p>
+<br><br>
+
+<p class="ds2">Connection</p>
+<hr size="2" color="red">
+<p class="ds3">
+We have established connections across many creative industries, artists, designers, and music composers looking for potential talents for hire and collaborations.
+</p>
+
+<div class="logo2">
+<img src="Picture WD/p1.png" class="img preview" >
+<img src="Picture WD/p2.png" class="img preview" >
+<img src="Picture WD/p3.png" class="img preview" >
+</div>
+<br>
+<div class="logo2">
+  <img src="Picture WD/p4.png" class="img preview" >
+  <img src="Picture WD/p5.png" class="img preview" >
+
+</div>
+
+<script>
+for (let img of document.querySelectorAll(".preview")) {
+  img.addEventListener("click", () => {
+
+      let container = document.createElement("div")
+      container.classList.add("preview-container")
+      container.onclick = function () {
+          container.remove()
+      }
+      
+      let innerImg = document.createElement("img")
+      innerImg.classList.add("image")
+
+      innerImg.src = img.src
+
+      container.onwheel = function (event) {
+          event.preventDefault()
+        }
+container.append(innerImg)
+
+document.body.append(container)
+})
+}
+</script>
+</div></body></html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project1.css">
+  <link rel="stylesheet" href="programmes.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/travel.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="Project1.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="Programmes">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+    </ul>
+<br>
+  </div>
+  <hr class="dp1" size="250" color="brown">
+<p class="dp">Programmes</p>
+<br>
+<div class="dp2">
+    <p class="dp3">Diploma</p>
+    <hr size="3" color="red">
+
+  <img src="Picture WD/travel.jpg"  class="img preview"><p class="title">Fine Art</p><a class="link" href="Project1.html">[read more]</a>
+  <br>
+  <img src="Picture WD/travel.jpg"  class="img preview"><p class="title">Graphic Design</p><a class="link" href="Project1.html">[read more]</a>
+  <br>
+  <img src="Picture WD/travel.jpg"  class="img preview"><p class="title">Illustration</p><a class="link" href="Project1.html">[read more]</a>
+
+  <div class="space1">
+    <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Interior Design</p><a class="link1" href="Project1.html">[read more]</a>
+    <br>
+    <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Industrial Design</p><a class="link1" href="Project1.html">[read more]</a>
+    <br>
+    <img src="Picture WD/travel.jpg" class="img preview"><p class="title">Textile & Fashion Design</p><a class="link1" href="Project1.html">[read more]</a>
+    </div>
+<br><br>
+  <script>
+    for (let img of document.querySelectorAll(".preview")) {
+      img.addEventListener("click", () => {
+    
+          let container = document.createElement("div")
+          container.classList.add("preview-container")
+          container.onclick = function () {
+              container.remove()
+          }
+          
+          let innerImg = document.createElement("img")
+          innerImg.classList.add("image")
+    
+          innerImg.src = img.src
+    
+          container.onwheel = function (event) {
+              event.preventDefault()
+            }
+    container.append(innerImg)
+    
+    document.body.append(container)
+    })
+    }
+    </script>
+
+<html>
+    <head><title>Contact us</title></head>
+    <link rel="stylesheet" href="map1.css">
+    <link rel="stylesheet" href="project1.css">
+<body>
+    <div class="header">
+        <div class="logo">
+        <div class="logo1">
+            <img src="Picture WD/travel.jpg"   height=70px width=200px >
+        </div></div>
+        <ul class="header-list" >
+          <li class="header-items"><a href="Project1.html">Home</a>
+          <li class="header-items"><a href="About us.html">About us</a>
+          <li class="header-items"><a href="programmes.html">Programmes</a>
+          <li class="header-items"><a href="Contact us.html">Contact</a>
+        </ul>
+    <br></div>
+<hr size="4" color="black">
+
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3446909614586!2d103.80973001467048!3d1.557286698864351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6eaf32da76a9%3A0x30a4766eff5b6b53!2sCrescendo%20International%20College%2C%20Johor%20Bahru!5e0!3m2!1sen!2smy!4v1678217047280!5m2!1sen!2smy"
+width="400" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe></div>
+
+
+<div class="text-ct">
+    <div class="title">
+    Mailing Address:
+</div></div>
+
+<div class="text1-ct">
+    <p>Lebuh Cemerlang,</p>
+    <p>Desa Cemerlang,</p>
+    <p>81800 Ulu Tiram,</p>
+    <p>Johor, Malaysia.</p>
+<br>
+<div class="title">
+    Opening Hours:
+</div>
+    <p>Mon - Fri 9.00am – 5.00pm</p>
+    <p>Sat & Sun 9.30am – 3.30pm</p>
+
+<div class="title">
+    <p>Tel:</p>
+</div>
+     +607-8636 888 
+<div class="title">
+    <p>WhatApp:</p>
+</div>
+    pp 011-13052008
+</div>
+
+</body></html>

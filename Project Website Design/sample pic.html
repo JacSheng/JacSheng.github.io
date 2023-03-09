@@ -1,0 +1,23 @@
+<html>
+<head><title>j</title>
+    <link rel="stylesheet" href="sample pic.css">
+</head>
+<body>
+    <div>
+        <img src="Picture WD/Google.jpeg" class="big">
+    </div>
+    
+<div class="small">
+    <img src="Picture WD/lily.jpg">
+    <img src="Picture WD/rosess.jpg.jpg" >
+</div>
+
+<script>
+    let imgs =document.getElementsByTagName('img');
+    for(let i=1;i<imgs.length;i++){
+        imgs[i].onmouseover = function(){
+            imgs[0].src = this.src;
+        }
+    }
+    
+</script>
