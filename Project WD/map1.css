@@ -18,3 +18,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:19px;
 }
+
+@media screen and (max-width:1100px)  {
+    .screen{
+        margin-top: -60%;
+        margin-left: 40%;
+    }
+    
+}
