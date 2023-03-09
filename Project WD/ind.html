@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="programmes.css">
+  <link rel="stylesheet" href="programmes-file.css">
+  <link rel="icon" href="Picture WD/JSA.jpg" type="image/jpg">
+  <title>Industrial Design-JS College of Art & Design</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/JSA.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="homepage.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="programmes.html">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+      <li class="header-items"><a href="joinus.html" target="_blank">Join us</a>
+    </ul>
+<br>
+  </div>
+  <hr size="4" color="red">
+<br>
+<div class="ptitle">
+<img src="Picture WD/ind.png"  width="90%" height="100%">
+</div>  
+<br>
+<div class="ptext">
+<p class="ptext1">Course Overview</p>
+<p class="ptext2">Do you like to design the next future car concept?</p>
+<p class="ptext2">The Industrial Design course begins with a grounding in design fundamentals, and later focuses on the study of aesthetics, 
+  functions, use of materials and manufacturing processes.</p>
+<br>
+<p class="ptext2">Industrial Design students will have the opportunity to develop innovative designs for human needs and improve the quality of living. 
+  This course emphasizes hands-on skills and methods for solving design problems. Our students will be trained in various aspects of design, from original ideas to building 3-D prototypes 
+  while learning the manufacturing processes and marketing strategies. Design projects cover areas such as consumer goods, leisure and sporting equipment, workshop machinery and hardware, 
+  medical and educational equipment, products for disabled people, electronics and design for transportation.</p>
+<br><br>
+<p class="ptext1">Showcase Gallery</p>
+
+<div class="gallery">
+    <div class="gallery-main">
+        <img src="Picture WD/ind0.jpeg" id="main">
+    </div>
+
+    <div class="gallery-small">
+        <img src="Picture WD/ind0.jpeg" onclick="changeimage(this.src)">
+        <img src="Picture WD/ind2.png"onclick="changeimage(this.src)">
+        <img src="Picture WD/ind3.jpg"onclick="changeimage(this.src)">
+    </div>
+</div>
+
+<script>
+    const changeimage = (src) =>{
+        document.getElementById("main").src = src
+    }
+</script>
+
+<br><br><br>
