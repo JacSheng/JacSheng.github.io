@@ -81,3 +81,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
+
+@media screen and (max-width:1100px)  {
+    .dp{
+        margin-top: -20%;
+    }
+    .space1{
+        margin-top: -115%;
+    }
+}
