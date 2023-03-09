@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="programmes.css">
+  <link rel="stylesheet" href="programmes-file.css">
+  <link rel="icon" href="Picture WD/JSA.jpg" type="image/jpg">
+  <title>Interior Design-JS College of Art & Design</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/JSA.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="JSA.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="programmes.html">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+      <li class="header-items"><a href="joinus.html" target="_blank">Join us</a>
+    </ul>
+<br>
+  </div>
+  <hr size="4" color="red">
+<br>
+<div class="ptitle">
+<img src="Picture WD/id.png"  width="90%" height="100%">
+</div>  
+<br>
+<div class="ptext">
+<p class="ptext1">Course Overview</p>
+<p class="ptext2">Would you like to transform your spaces?</p>
+<p class="ptext2">The Interior Design course aims to equip students with the ability to create both the aesthetic 
+  and technical aspects required for professional interior design practice.</p>
+<br>
+<p class="ptext2">Throughout the program, students will learn to develop creative and innovative design abilities by working on individual projects which deal with the theoretical, conceptual and practical aspects of interior design. 
+  Students will be exposed to complex problem of modern environments in the context of style, taste, culture and humanity. We maintain a close relationship with the industrial sectors in the country and keep our faculty and students updated with current developments in design and technology. 
+  At the end of the program, students will be able to meet the challenges and demands of the design profession in an effective manner.</p>
+<br><br>
+<p class="ptext1">Showcase Gallery</p>
+
+<div class="gallery">
+    <div class="gallery-main">
+        <img src="Picture WD/id6.jpg" id="main">
+    </div>
+
+    <div class="gallery-small">
+        <img src="Picture WD/id6.jpg" onclick="changeimage(this.src)">
+        <img src="Picture WD/id2.jpg"onclick="changeimage(this.src)">
+        <img src="Picture WD/id3.webp"onclick="changeimage(this.src)">
+    </div>
+</div>
+
+<script>
+    const changeimage = (src) =>{
+        document.getElementById("main").src = src
+    }
+</script>
+
+<br><br><br>

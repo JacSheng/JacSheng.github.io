@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="programmes.css">
+  <link rel="stylesheet" href="programmes-file.css">
+  <link rel="icon" href="Picture WD/JSA.jpg" type="image/jpg">
+  <title>Illustration-JS College of Art & Design</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/JSA.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="JSA.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="programmes.html">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+      <li class="header-items"><a href="joinus.html" target="_blank">Join us</a>
+    </ul>
+<br>
+  </div>
+  <hr size="4" color="red">
+<br>
+<div class="ptitle">
+<img src="Picture WD/ill.png"  width="90%" height="100%">
+</div>  
+<br>
+<div class="ptext">
+<p class="ptext1">Course Overview</p>
+<p class="ptext2">Do you like to create characters, illustrating a story or an idea?</p>
+<p class="ptext2">The Illustration course is to train creative illustrators who are able to perform creatively and effectively in the practice of illustration. 
+  The course emphasizes both manual and digital expression skills. Students will begin with observational studies, and then gradually moving towards ideas and concepts development;
+   with the exploration of various media in illustration and advertising related drawings and paintings, the course will also take advantage of the computer aided design software and use it to further enhance the quality of creative illustration.</p>
+<br>
+<p class="ptext2">The course will reinforce the importance of research, investigation and experimentation in the process of image making to provide a focus on the problem solving. The area of illustration studies ranges from realistic, 
+  analytical and interpretative to expressive approaches. The students will also learn general graphic design, typography, photography, computer graphics, desktop publishing design and so on.</p>
+<br><br>
+<p class="ptext1">Showcase Gallery</p>
+
+<div class="gallery">
+    <div class="gallery-main">
+        <img src="Picture WD/ill1.jpg" id="main">
+    </div>
+
+    <div class="gallery-small">
+        <img src="Picture WD/ill1.jpg"  onclick="changeimage(this.src)">
+        <img src="Picture WD/ill2.jpeg" onclick="changeimage(this.src)">
+        <img src="Picture WD/ill4.jpg"  onclick="changeimage(this.src)">
+    </div>
+</div>
+
+<script>
+    const changeimage = (src) =>{
+        document.getElementById("main").src = src
+    }
+</script>
+
+<br><br><br>

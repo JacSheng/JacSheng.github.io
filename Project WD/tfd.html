@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="programmes.css">
+  <link rel="stylesheet" href="programmes-file.css">
+  <link rel="icon" href="Picture WD/JSA.jpg" type="image/jpg">
+  <title>Textile & Fashion Design-JS College of Art & Design</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+    <div class="logo1">
+     <img src="Picture WD/JSA.jpg"   height=70px width=200px >
+    </div></div>
+    <ul class="header-list" >
+      <li class="header-items"><a href="JSA.html">Home</a>
+      <li class="header-items"><a href="About us.html">About us</a>
+      <li class="header-items"><a href="programmes.html">Programmes</a>
+      <li class="header-items"><a href="Contact us.html">Contact</a>
+      <li class="header-items"><a href="joinus.html" target="_blank">Join us</a>
+    </ul>
+<br>
+  </div>
+  <hr size="4" color="red">
+<br>
+<div class="ptitle">
+<img src="tfd.png"  width="90%" height="100%">
+</div>  
+<br>
+<div class="ptext">
+<p class="ptext1">Course Overview</p>
+<p class="ptext2">Do you want to be the next Giorgio Armani?</p>
+<p class="ptext2">The Textile and Fashion Design course caters to the needs of students interested in becoming a professional textile or fashion designer. 
+    This course consists of two major modules, namely Textile Design and Fashion Design.</p>
+<br>
+<p class="ptext2">Textile Design provides training in conceptual development, creative interpretation and technical production as well as knowledge relevance which is crucial to the textile design industry. 
+    An industrial attachment and a practical workshop will further provide valuable practical experience for the students. Fashion Design equips the students with fashion and textile knowledge, marketing and practical skills. 
+    Design concepts and technical skills are inter-dependent and mutually enhancing in the training approaches. The program is structured to cover all aspects of fashion design from basic to advanced drafting, draping, construction and designing.
+     Studio projects include functional to experimental clothing designs.</p>
+<br><br>
+<p class="ptext1">Showcase Gallery</p>
+
+<div class="gallery">
+    <div class="gallery-main">
+        <img src="tfd1.jpeg" id="main">
+    </div>
+
+    <div class="gallery-small">
+        <img src="tfd1.jpeg"  onclick="changeimage(this.src)">
+        <img src="tfd2.jpeg" onclick="changeimage(this.src)">
+        <img src="tfd3.jpg"  onclick="changeimage(this.src)">
+    </div>
+</div>
+
+<script>
+    const changeimage = (src) =>{
+        document.getElementById("main").src = src
+    }
+</script>
+
+<br><br><br>
