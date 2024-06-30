@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>One-On-One Basketball Game</title>
+    <script src="libraries/p5.min.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.min.js" type="text/javascript"></script>
+    <script src="libraries/matter.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="ball1.js"></script>
+    <script src="gameManager.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <h1>One-On-One Basketball Game</h1>
+        <button class="menu-button" onclick="selectTwoPlayerMode('timeLimit')">Two Players - 1 Minute Challenge</button>
+        <button class="menu-button" onclick="selectTwoPlayerMode('firstToFive')">Two Players - First to 5 Points</button>
+        <button class="menu-button" onclick="startGame('practice')">Practice Mode</button>
+    </div>
+    <div id="gameCanvas" style="display: none;">
+        <div id="right" class="rim right"></div>
+        <div id="left" class="rim left"></div>
+        <div id="scoreboard" style="display: none;">Score: 0</div>
+        <div id="twoPlayerScoreboard" style="display: none;">
+            <div id="scoreDisplay">
+                <span id="player1Score">P1: 0</span>
+                <span id="player2Score">P2: 0</span>
+            </div>
+            <div id="timer" style="display: none;">Time: 60</div>
+        </div>
+    </div>
+</body>
+</html>
